@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         SERVER = "ubuntu@13.222.133.136" 
-        WEB_DIR = "/home/ubuntu/nginx-project"
+        WEB_DIR = "/var/www/html"
     }
 
     stages {
