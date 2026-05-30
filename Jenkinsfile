@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-        SERVER = "ubuntu@NGINX_SERVER_IP"
-        WEB_DIR = "/var/www/html"
+        SERVER = "ubuntu@13.222.133.136" 
+        WEB_DIR = "/home/ubuntu/nginx-project"
     }
 
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'YOUR_REPO_URL'
+                git branch: 'main', url: 'https://github.com/Ninad262002/Static_website_jenkins.git
             }
         }
         stage('List Files') {
