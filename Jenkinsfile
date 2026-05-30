@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/Ninad262002/Static_website_jenkins.git
+                git branch: 'main', url: 'https://github.com/Ninad262002/Static_website_jenkins.git'
             }
         }
         stage('List Files') {
